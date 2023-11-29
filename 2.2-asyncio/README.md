@@ -1,0 +1,32 @@
+# Домашнее задание к лекции «Asyncio»
+
+## Документация по учебному проекту
+
+Для запуска проекта необходимо:
+
+- Установить зависимости:
+```bash
+pip install -r requirements.txt
+```
+- Создать и активировать виртуальное окружение в папке проекта `./env`
+- Определить переменные окружения `???` в директории ```env/.env```:
+
+  - PG_USER=???
+  - PG_PASSWORD=???
+  - PG_DB=???
+  - PGADMIN_DEFAULT_EMAIL=admin@yandex.ru
+  - PGADMIN_DEFAULT_PASSWORD=admin1
+  - PGADMIN_CONFIG_SERVER_MODE=False
+
+
+- Cоздать базу данных и подключения к PgAdmin для отображения
+таблиц:
+```bash
+docker-compose up -d
+```
+
+- Запустить модуль [main.py](./main.py)
+
+- Открыть PgAdmin по адресу http://localhost:5050/ и создать новый сервер
+
+- Открыть таблицу базы данных и проверить что данные добавлены в таблицу

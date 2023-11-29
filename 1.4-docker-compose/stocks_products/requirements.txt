@@ -1,0 +1,5 @@
+django
+djangorestframework
+gunicorn==20.1.0
+psycopg2-binary
+django_filter
